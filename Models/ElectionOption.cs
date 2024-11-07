@@ -1,5 +1,10 @@
 class ElectionOption
 {
     Guid id;
-    public required string name;
+    public string name;
+    public ElectionOption(string name)
+    {
+        this.name = name;
+        id = Guid.NewGuid();
+    }
 }
